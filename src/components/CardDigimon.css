@@ -1,0 +1,54 @@
+.card {
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    width: 150px;
+}
+
+.card img {
+    border-radius: 5px;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    align-items: center;
+}
+
+.card h2 {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.card p {
+    font-size: 1rem;
+    margin: 0;
+}
+
+/* Niveles: In Training, Rookie, Champion, Ultimate, Mega. Colores y bordes distintos */
+.card.in-training {
+    background-color: lightblue;
+    border-color: blue;
+}
+
+.card.rookie {
+    background-color: lightgreen;
+    border-color: green;
+}
+
+.card.champion {
+    background-color: lightyellow;
+    border-color: yellow;
+}
+
+.card.ultimate {
+    background-color: lightcoral;
+    border-color: red;
+}
+
+.card.mega {
+    background-color: lightpink;
+    border-color: hotpink;
+}
