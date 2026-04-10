@@ -11,7 +11,7 @@ export interface DigimonApiData {
 const useDigimon = () => {
     const [digimon, setDigimon] = useState<DigimonApiData[]>([]);
 
-    // filtro cuadro de texto
+    // barra búsqueda
     const [filtradigimon, setFiltradigimon] = useState("");
 
     useEffect(() => {
