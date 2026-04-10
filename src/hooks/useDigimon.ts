@@ -11,6 +11,9 @@ export interface DigimonApiData {
 const useDigimon = () => {
     const [digimon, setDigimon] = useState<DigimonApiData[]>([]);
 
+    // filtro cuadro de texto
+    const [filtradigimon, setFiltradigimon] = useState("");
+
     useEffect(() => {
         const obtenerDigimon = async () => {
             try {
@@ -25,8 +28,14 @@ const useDigimon = () => {
         obtenerDigimon();
     }, []);
 
+    const FiltrarDigimon = digimon.filter((digimon) =>
+        digimon.name.toLowerCase().includes(filtradigimon.toLowerCase())
+    );
+    
+
     return {
-        digimon
+        digimon: FiltrarDigimon,
+        setFiltradigimon
     }
 }
 

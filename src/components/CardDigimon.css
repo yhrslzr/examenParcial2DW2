@@ -39,8 +39,8 @@
 }
 
 .card.champion {
-    background-color: lightyellow;
-    border-color: yellow;
+    background-color: rgb(217, 193, 75);
+    border-color: rgb(255, 149, 0);
 }
 
 .card.ultimate {
