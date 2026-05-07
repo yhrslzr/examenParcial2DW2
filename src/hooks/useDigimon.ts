@@ -11,8 +11,6 @@ export interface DigimonApiData {
 const useDigimon = () => {
     const [digimon, setDigimon] = useState<DigimonApiData[]>([]);
 
-    // barra búsqueda
-    const [filtradigimon, setFiltradigimon] = useState("");
 
     useEffect(() => {
         const obtenerDigimon = async () => {
@@ -27,15 +25,11 @@ const useDigimon = () => {
 
         obtenerDigimon();
     }, []);
-
-    const FiltrarDigimon = digimon.filter((digimon) =>
-        digimon.name.toLowerCase().includes(filtradigimon.toLowerCase())
-    );
     
 
     return {
-        digimon: FiltrarDigimon,
-        setFiltradigimon
+        digimon,
+        
     }
 }
 
