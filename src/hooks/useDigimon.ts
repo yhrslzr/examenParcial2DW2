@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 
-
 export interface DigimonApiData {
     id: number,
     name: string,
