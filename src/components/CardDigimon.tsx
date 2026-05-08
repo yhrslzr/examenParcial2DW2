@@ -1,6 +1,6 @@
 import type {
     propsCardDigimon
-} from "../TI/Interfaces";
+} from "../IT/Interfaces";
 
 import "./CardDigimon.css"
 
