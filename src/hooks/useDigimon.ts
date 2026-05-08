@@ -11,7 +11,6 @@ export interface DigimonApiData {
 const useDigimon = () => {
     const [digimon, setDigimon] = useState<DigimonApiData[]>([]);
 
-
     useEffect(() => {
         const obtenerDigimon = async () => {
             try {
@@ -29,7 +28,6 @@ const useDigimon = () => {
 
     return {
         digimon,
-        
     }
 }
 

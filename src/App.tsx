@@ -1,7 +1,10 @@
 import './App.css'
 
 import { useState } from 'react'
-import { NavbarDigimon, CardDigimon } from './components/components.index';
+import { 
+  NavbarDigimon, 
+  CardDigimon 
+} from './components/components.index';
 import useDigimon from './hooks/useDigimon'
 
 function App() {
